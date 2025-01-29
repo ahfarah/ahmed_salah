@@ -1,18 +1,25 @@
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Profile - Ahmed Salah
-  </title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <style>
-   body {
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Courses &amp; Projects - Profile - Ahmed Salah</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
             font-family: 'Roboto', sans-serif;
-            background: url('pexels-mikael-blomkvist-6476254.jpg') no-repeat center center fixed;
+            background: url('Background.jpg') no-repeat center center fixed;
             background-size: cover;
+        }
+        .course-item:hover {
+            background-color: #f0f4f8;
+            transition: background-color 0.3s ease;
+        }
+        .course-item img {
+            transition: transform 0.3s ease;
+        }
+        .course-item:hover img {
+            transform: scale(1.1);
         }
         .experience-card {
             transition: transform 0.3s ease-in-out;
@@ -24,10 +31,10 @@
         .experience-details {
             display: none;
             position: absolute;
-            top: 100%;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
-            background-color: white;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.9);
             border: 1px solid #e2e8f0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             padding: 1rem;
@@ -52,7 +59,13 @@
         .back-to-top:hover {
             background-color: #2563eb;
         }
-  </style>
+    </style>
+</head>
+<body>
+    <!-- Back to Top Button -->
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        <i class="fas fa-chevron-up"></i>
+    </div>
  </head>
  <body class="bg-gray-100">
   <div class="relative">
@@ -70,15 +83,13 @@
      <a class="w-48 py-2 text-white bg-gray-500 rounded-full text-center" href="#education">
       Education
      </a>
-     <a class="w-48 py-2 text-white bg-gray-600 rounded-full text-center" href="#projects">
-      Projects
      </a>
     </div>
    </div>
   </div>
   <div class="container mx-auto p-4 bg-white rounded-lg shadow-md mt-6 flex flex-col md:flex-row" id="profile" style="max-width: 900px;">
    <div class="left mb-4 md:mb-0 md:mr-4">
-    <img alt="Profile picture of Ahmed Salah" class="rounded-lg" height="400" src="GBWJ9902 - Copy.JPEG" width="400"/>
+    <img alt="Profile picture of Ahmed Salah" class="rounded-lg" height="400" src="ahmed salah.JPEG" width="400"/>
    </div>
    <div class="right flex-1">
     <h1 class="text-3xl font-bold mb-2 text-blue-700">
@@ -128,9 +139,9 @@
    <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
     <!-- Customer Service Agent -->
     <div class="text-center max-w-xs experience-card">
-     <img alt="Person holding a bouquet of flowers" class="rounded-full mx-auto mb-4" src="images.png"/>
+     <img alt="Person holding a bouquet of flowers" class="rounded-full mx-auto mb-4" src="Alfascan.png"/>
      <h2 class="text-lg font-bold text-purple-600">
-      Customer Service Agent | Alpha Scan
+      Customer Service Agent | Alfascan
      </h2>
      <div class="experience-details">
       <ul class="text-left mt-2 space-y-1 text-sm">
@@ -151,7 +162,7 @@
     </div>
     <!-- Illustrator -->
     <div class="text-center max-w-xs experience-card">
-     <img alt="Library with books" class="rounded-full mx-auto mb-4" src="19828c2c56345c1e1b94c9258c84a644~c5_1080x1080.jpg"/>
+     <img alt="Library with books" class="rounded-full mx-auto mb-4" src="Drawing.jpg"/>
      <h2 class="text-lg font-bold text-purple-600">
       Illustrator | Drawing
      </h2>
@@ -168,7 +179,7 @@
     </div>
     <!-- Cashier -->
     <div class="text-center max-w-xs experience-card">
-     <img alt="People in a meeting" class="rounded-full mx-auto mb-4" src="1001738042740.jpg"/>
+     <img alt="People in a meeting" class="rounded-full mx-auto mb-4" src="Restaurant.jpg"/>
      <h2 class="text-lg font-bold text-purple-600">
       Cashier | Al-Fashoria Restaurant
      </h2>
@@ -223,106 +234,145 @@
    </div>
   </div>
   <div class="container mx-auto p-4 bg-white rounded-lg shadow-md mt-6" id="education" style="max-width: 900px;">
-   <h2 class="text-2xl font-bold mb-4 text-blue-700">
-    Education
-   </h2>
-   <div class="flex items-center mb-4">
-    <img alt="Helwan University logo" class="rounded-full mr-4" height="64" src="images.jpg" width="64"/>
-    <div>
-     <h3 class="text-xl font-semibold text-blue-600">
-      Helwan University | Faculty of Commerce
-     </h3>
-     <p class="text-gray-600">
-      2015 - 2019
-     </p>
-     <p class="text-gray-600">
-      Major: Statistics Department | Grade: Good
-     </p>
+    <h2 class="text-2xl font-bold mb-4 text-blue-700">
+     Education
+    </h2>
+    <div class="flex items-center mb-4">
+     <img alt="Helwan University logo" class="rounded-full mr-4" height="64" src="https://placehold.co/64x64?text=Helwan+University+Logo"/>
+     <div>
+      <h3 class="text-xl font-semibold text-blue-600">
+       Helwan University | Faculty of Commerce
+      </h3>
+      <p class="text-gray-600">
+       2015 - 2019
+      </p>
+      <p class="text-gray-600">
+       Major: Statistics Department | Grade: Good
+      </p>
+     </div>
     </div>
-   </div>
-   <h3 class="text-xl font-semibold text-blue-600 mb-2">
-    Courses
-   </h3>
-   <ul class="list-disc list-inside text-gray-700">
-    <li>
-     Microsoft Excel: Formulas &amp; Functions (Jan 2023)
-    </li>
-    <li>
-     Python Full Course (Jun 2023)
-    </li>
-    <li>
-     Accounting with Excel (feb 2024)
-    </li>
-    <li>
-    MySQL (jun 2024)
-    </li>
-    <li>
-    Power BI (oct 2024)
-    </li>
-   </ul>
-  </div>
-  <div class="container mx-auto p-4 bg-white rounded-lg shadow-md mt-6" id="projects" style="max-width: 900px;">
-   <h2 class="text-2xl font-bold mb-4 text-blue-700">
-    Projects
-   </h2>
-   <ul>
-    <li class="mb-4">
-     <div class="flex items-center">
-      <img alt="Microsoft Excel project logo" class="rounded-full mr-4" height="64" src="https://storage.googleapis.com/a1aa/image/TsAIhaeqfIvfTIwW0dM4RQ3vYcQSJhz6Cex7q4a43mWC6UegC.jpg" width="64"/>
-      <div>
-       <h3 class="text-xl font-semibold text-blue-600">
-        Microsoft Excel: Formulas and Functions
-       </h3>
-       <p class="text-gray-600">
-        Developed a tool to automatically calculate break times.
-       </p>
-      </div>
-     </div>
-    </li>
-    <li class="mb-4">
-     <div class="flex items-center">
-      <img alt="Accounting" class="rounded-full mr-4" height="64" src="https://storage.googleapis.com/a1aa/image/Na14Brvl1kJwKxVPfTxl5WZq25nIRiBN9FQtcPDKJcoUnyDKA.jpg" width="64"/>
-      <div>
-       <h3 class="text-xl font-semibold text-blue-600">
-        Accounting with Excel
-       </h3>
-       <p class="text-gray-600">
-        Created templates for the general ledger, journal, and income statement.
-       </p>
-      </div>
-     </div>
-    </li>
-    <li class="mb-4">
-     <div class="flex items-center">
-      <img alt="Power BI" class="rounded-full mr-4" height="64" src="https://storage.googleapis.com/a1aa/image/YlMaXHzHUT42OpH27BOouXaVoRhNEGeqStBkchDWz5gTnyDKA.jpg" width="64"/>
-      <div>
-       <h3 class="text-xl font-semibold text-blue-600">
-        Power BI
-       </h3>
-       <p class="text-gray-600">
-        Sales report, monthly medical procedures summary, data modeling.
-       </p>
-      </div>
-     </div>
-    </li>
-    <li class="mb-4">
-     <div class="flex items-center">
-      <img alt="Python Full Course Projects" class="rounded-full mr-4" height="64" src="https://storage.googleapis.com/a1aa/image/4s9T4PmyVCoJJN7ek8fvxfKK4OG2opPp7oVszOuMgrqf6UegC.jpg" width="64"/>
-      <div>
-       <h3 class="text-xl font-semibold text-blue-600">
-        Python Full Course Projects
-       </h3>
-       <p class="text-gray-600">
-        Developed a translation tool, implemented data collection techniques, created a program for data entry into databases, designed a work scheduling program, automated email notifications from databases using Outlook.
-       </p>
-      </div>
-     </div>
-    </li>
-   </ul>
-  </div>
-  <div class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-   <i class="fas fa-arrow-up">
-   </i>
-  </div>
- </body>
+    <div class="container mx-auto p-4">
+     <h3 class="text-2xl font-bold mb-6">
+      Courses &amp; Projects
+     </h3>
+     <ul class="list-none text-gray-700">
+      <li class="mb-4 course-item p-4 rounded-lg">
+       <div class="flex items-center">
+        <img alt="Microsoft Excel project logo showing a spreadsheet with various formulas and functions" class="rounded-full mr-4" height="64" src="https://placehold.co/64x64?text=Excel"/>
+        <div>
+         <h3 class="text-xl font-semibold text-blue-600">
+          Microsoft Excel: Formulas and Functions
+         </h3>
+         <ul class="list-disc list-inside text-gray-600">
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://1drv.ms/x/c/26e10097d7055f56/EYXsU4usx0hAm5zt6lTAM_4B8vekAyys-xeo3S-YDSZVfg?e=aQeAq9" target="_blank">
+            Developed a tool to automatically calculate break times.
+           </a>
+          </li>
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://1drv.ms/x/c/26e10097d7055f56/EZukFBPROhtOnVr5695JV5wBQEvy_JUe6DRBYjLRBi1qvA?e=2GRqZk&nav=MTVfezNBRDYzM0I4LTI2MTYtNDY2Ri1CRTFDLTdBQkRFOTg5NjA3Qn0" target="_blank">
+            Added a swap button with macro.
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </li>
+      <li class="mb-4 course-item p-4 rounded-lg">
+       <div class="flex items-center">
+        <img alt="Python Full Course Projects logo showing a snake wrapped around a computer" class="rounded-full mr-4" height="64" src="https://placehold.co/64x64?text=Python"/>
+        <div>
+         <h3 class="text-xl font-semibold text-blue-600">
+          Python Full Course Projects
+         </h3>
+         <ul class="list-disc list-inside text-gray-600">
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/python-full-course" target="_blank">
+            Developed a translation tool.
+           </a>
+          </li>
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/python-full-course" target="_blank">
+            Implemented data collection techniques.
+           </a>
+          </li>
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/python-full-course" target="_blank">
+            Created a program for data entry into databases.
+           </a>
+          </li>
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/python-full-course" target="_blank">
+            Designed a work scheduling program.
+           </a>
+          </li>
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/python-full-course" target="_blank">
+            Automated email notifications from databases using Outlook.
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </li>
+      <li class="mb-4 course-item p-4 rounded-lg">
+       <div class="flex items-center">
+        <img alt="Accounting logo showing a calculator and financial documents" class="rounded-full mr-4" height="64" src="https://placehold.co/64x64?text=Accounting"/>
+        <div>
+         <h3 class="text-xl font-semibold text-blue-600">
+          Accounting with Excel
+         </h3>
+         <ul class="list-disc list-inside text-gray-600">
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/accounting-excel" target="_blank">
+            Created templates for the journal, general ledger, income statement.
+           </a>
+         </ul>
+        </div>
+       </div>
+      </li>
+      <li class="mb-4 course-item p-4 rounded-lg">
+       <div class="flex items-center">
+        <img alt="Power BI logo showing a bar chart and data visualization" class="rounded-full mr-4" height="64" src="https://placehold.co/64x64?text=Power+BI"/>
+        <div>
+         <h3 class="text-xl font-semibold text-blue-600">
+          Power BI
+         </h3>
+         <ul class="list-disc list-inside text-gray-600">
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/power-bi" target="_blank">
+            Sales report.
+           </a>
+          </li>
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/power-bi" target="_blank">
+            Monthly medical procedures summary.
+           </a>
+          </li>
+          <li>
+           <a class="text-blue-600 hover:underline" href="https://example.com/power-bi" target="_blank">
+            Data modeling.
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </li>
+      <li class="mb-4 course-item p-4 rounded-lg">
+       <div class="flex items-center">
+        <img alt="MySQL logo showing a dolphin and database symbols" class="rounded-full mr-4" height="64" src="https://placehold.co/64x64?text=MySQL"/>
+        <div>
+         <h3 class="text-xl font-semibold text-blue-600">
+          MySQL (Jun 2024)
+         </h3>
+        </div>
+       </div>
+      </li>
+     </ul>
+    </div>
+<div class="back-to-top fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg cursor-pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+<i class="fas fa-arrow-up">
+</i>
+</div>
+</body>
 </html>
