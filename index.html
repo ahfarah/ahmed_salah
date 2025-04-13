@@ -131,97 +131,214 @@
   </div>
     <div class="container mx-auto p-4 bg-white rounded-lg shadow-md mt-6" id="experience" style="max-width: 900px;">
         <h2 class="text-2xl font-bold mb-4 text-blue-700">Experience</h2>
-        <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
-            <div class="text-center max-w-xs experience-card">
-                <img alt="Customer Service Agent" class="rounded-full mx-auto mb-4" src="Home/Alfascan.png"/>
-                <h2 class="text-lg font-bold text-purple-600">Customer Service Agent | Alfascan</h2>
-                <div class="experience-details">
-                    <ul class="text-left mt-2 space-y-1 text-sm">
-                        <li>• Managed customer inquiries and provided solutions in a timely manner. 
-                        <li>• Maintained accurate records of customer interactions using internal databases.</li>
-                        <li>• Conducted data analysis to identify trends and improve service processes.</li>
-                        <li>• Collaborated with team members to enhance service delivery and improve customer </li>
-                    </ul>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8 relative">
+            <button onclick="showPreviousExperience()" class="absolute left-0 md:left-[-50px] top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-4 rounded-full shadow-md hover:bg-blue-600 text-xl">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        <div id="experience-cards" class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-4 w-full">
+                <div class="text-center max-w-xs experience-card">
+                    <img alt="Customer Service Agent" class="rounded-full mx-auto mb-4" src="Home/Alfascan.png"/>
+                    <h2 class="text-lg font-bold text-purple-600">Customer Service Agent | Alfascan</h2>
+                    <div class="experience-details">
+                        <ul class="text-left mt-2 space-y-1 text-sm">
+                            <li>• Managed customer inquiries and provided solutions in a timely manner.</li>
+                            <li>• Maintained accurate records of customer interactions using internal databases.</li>
+                            <li>• Conducted data analysis to identify trends and improve service processes.</li>
+                            <li>• Collaborated with team members to enhance service delivery and improve customer.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center max-w-xs experience-card hidden">
+                    <img alt="Illustrator" class="rounded-full mx-auto mb-4" src="Home/Drawing.jpg"/>
+                    <h2 class="text-lg font-bold text-purple-600">Illustrator | Drawing</h2>
+                    <div class="experience-details">
+                        <ul class="text-left mt-2 space-y-1 text-sm">
+                            <li>• Specialize in creating and editing custom portraits tailored to client specifications.</li>
+                            <li>• Proficient in Adobe Premiere for video editing and presentation of artwork.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center max-w-xs experience-card hidden">
+                    <img alt="Cashier" class="rounded-full mx-auto mb-4" src="Home/Restaurant.jpg"/>
+                    <h2 class="text-lg font-bold text-purple-600">Cashier | Al-Fashoria Restaurant</h2>
+                    <div class="experience-details">
+                        <ul class="text-left mt-2 space-y-1 text-sm">
+                            <li>• Handled customer orders via phone and in-person, ensuring accuracy and excellent service.</li>
+                            <li>• Prepared and maintained balance sheets to track daily transactions and cash flow.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center max-w-xs experience-card hidden">
+                    <img alt="Accountant" class="rounded-full mx-auto mb-4" src="Home/Accountant.png"/>
+                    <h2 class="text-lg font-bold text-purple-600">Accountant | Mohamed Abdel Raouf Accounting Office</h2>
+                    <div class="experience-details">
+                        <ul class="text-left mt-2 space-y-1 text-sm">
+                            <li>• Managed sales and purchase invoices to ensure accurate financial records.</li>
+                            <li>• Handled journal entries and general ledger to track financial transactions.</li>
+                            <li>• Prepared and reviewed trial balances to ensure financial accuracy.</li>
+                            <li>• Assisted in financial reporting and reconciliation tasks.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center max-w-xs experience-card hidden">
+                    <img alt="Data Entry" class="rounded-full mx-auto mb-4" src="home/P.Zone.png"/>
+                    <h2 class="text-lg font-bold text-purple-600">Data Entry | P Zone</h2>
+                    <div class="experience-details">
+                        <ul class="text-left mt-2 space-y-1 text-sm">
+                            <li>• Responsible for data entry and analysis within the Cost Control department.</li>
+                            <li>• Ensure accurate recording and insightful evaluation of financial data to support budgeting and cost efficiency.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="text-center max-w-xs experience-card">
-                <img alt="Illustrator" class="rounded-full mx-auto mb-4" src="Home/Drawing.jpg"/>
-                <h2 class="text-lg font-bold text-purple-600">Illustrator | Drawing</h2>
-                <div class="experience-details">
-                    <ul class="text-left mt-2 space-y-1 text-sm">
-                        <li>• Specialize in creating and editing custom portraits tailored to client specifications.</li>
-                        <li>• Proficient in Adobe Premiere for video editing and presentation of artwork.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center max-w-xs experience-card">
-                <img alt="Cashier" class="rounded-full mx-auto mb-4" src="Home/Restaurant.jpg"/>
-                <h2 class="text-lg font-bold text-purple-600">Cashier | Al-Fashoria Restaurant</h2>
-                <div class="experience-details">
-                    <ul class="text-left mt-2 space-y-1 text-sm">
-                        <li>• Handled customer orders via phone and in-person, ensuring accuracy and excellent service.</li>
-                        <li>• Prepared and maintained balance sheets to track daily transactions and cash flow.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="text-center max-w-xs experience-card">
-                <img alt="Cashier" class="rounded-full mx-auto mb-4" src="Home/Accountant.png"/>
-                <h2 class="text-lg font-bold text-purple-600">Accountant | Mohamed Abdel Raouf Accounting Office</h2>
-                <div class="experience-details">
-                    <ul class="text-left mt-2 space-y-1 text-sm">
-                        <li>• Managed sales and purchase invoices to ensure accurate financial records.</li>
-                        <li>• Handled journal entries and general ledger to track financial transactions.</li>
-                        <li>• Prepared and reviewed trial balances to ensure financial accuracy.</li>
-                        <li>• Assisted in financial reporting and reconciliation tasks.</li>
-                    </ul>
-                </div>
-            </div>
+            <button onclick="showNextExperience()" class="absolute right-0 md:right-[-50px] top-1/2 transform -translate-y-1/2 bg-blue-500 text-white p-4 rounded-full shadow-md hover:bg-blue-600 text-xl">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     </div>
-    <div class="container mx-auto p-4 bg-white rounded-lg shadow-md mt-6" id="skills" style="max-width: 900px;">
+
+    <script>
+        // Cache DOM elements and total count once
+        const experienceCards = Array.from(document.querySelectorAll('.experience-card'));
+        const totalCards = experienceCards.length;
+        let currentExperienceIndex = 0;
+
+        // Pre-calculate visibility states
+        function updateCardVisibility() {
+            // Show current and next card (or just current if at end)
+            const nextIndex = (currentExperienceIndex + 1) % totalCards;
+            
+            // Only modify classes for cards that need to change
+            experienceCards.forEach((card, i) => {
+                const shouldShow = i === currentExperienceIndex || i === nextIndex;
+                const isHidden = card.classList.contains('hidden');
+                
+                if (shouldShow && isHidden) {
+                    card.classList.remove('hidden');
+                } else if (!shouldShow && !isHidden) {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Optimized navigation functions
+        function showNextExperience() {
+            currentExperienceIndex = (currentExperienceIndex + 1) % totalCards;
+            updateCardVisibility();
+        }
+
+        function showPreviousExperience() {
+            currentExperienceIndex = (currentExperienceIndex - 1 + totalCards) % totalCards;
+            updateCardVisibility();
+        }
+
+        // Initialize visibility - show first two cards by default
+        experienceCards[0].classList.remove('hidden');
+        if (totalCards > 1) {
+            experienceCards[1].classList.remove('hidden');
+        }
+        
+        // Cache button elements and attach event listeners once
+        document.querySelector('button[onclick="showPreviousExperience()"]')
+            .addEventListener('click', showPreviousExperience);
+            
+        document.querySelector('button[onclick="showNextExperience()"]')
+            .addEventListener('click', showNextExperience);
+    </script>
+    <div class="container mx-auto p-4 bg-white rounded-lg shadow-md mt-6" id="skills" style="max-width: 900px; max-height: 400px; overflow-y: auto;">
         <h2 class="text-2xl font-bold mb-4 text-blue-700">Skills and Abilities</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex items-center mb-2">
-                <img alt="Analytical problem solving" class="rounded-full mr-2" height="32" src="https://storage.googleapis.com/a1aa/image/bREcfuPx1C0hQCqbfvMOe86F4aGOMxU0OQ2KaTJWonNLdKPoA.jpg" width="32"/>
+                <img alt="Analytical problem solving" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/analytics.png" width="32"/>
                 <span class="text-gray-700">Analytical Problem Solving</span>
             </div>
             <div class="flex items-center mb-2">
-                <img alt="Data cleaning" class="rounded-full mr-2" height="32" src="https://storage.googleapis.com/a1aa/image/oSHag7nrQRYpBhEjBpo0MjAQDEqlfyxIhEXYIefSaXlrdKPoA.jpg" width="32"/>
+                <img alt="Data cleaning" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/data-cleaning.png" width="32"/>
                 <span class="text-gray-700">Data Cleaning</span>
             </div>
             <div class="flex items-center mb-2">
-                <img alt="Data modeling" class="rounded-full mr-2" height="32" src="https://storage.googleapis.com/a1aa/image/bX2jx0K4xJrsPdZwvtKdftCXIKAtqdWj1Iwa5IVZyoDTnyDKA.jpg" width="32"/>
+                <img alt="Data modeling" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/data-modeling.png" width="32"/>
                 <span class="text-gray-700">Data Modeling</span>
             </div>
             <div class="flex items-center mb-2">
-                <img alt="Data collection" class="rounded-full mr-2" height="32" src="https://storage.googleapis.com/a1aa/image/zCackoCPI55PKhLwWVpyRBp8iVJBzdvecOZPZbas6MCRnyDKA.jpg" width="32"/>
+                <img alt="Data collection" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/data-collection.png" width="32"/>
                 <span class="text-gray-700">Data Collection</span>
             </div>
             <div class="flex items-center mb-2">
-                <img alt="Statistical analysis" class="rounded-full mr-2" height="32" src="https://storage.googleapis.com/a1aa/image/JjFfLBItUQXbKqCfZdHsrYNdiOJsrKfFk1ZOHMNjQy1CdKPoA.jpg" width="32"/>
+                <img alt="Statistical analysis" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/statistics.png" width="32"/>
                 <span class="text-gray-700">Statistical Analysis</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Analytical thinking" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/brain.png" width="32"/>
+                <span class="text-gray-700">Analytical Thinking</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Attention to detail" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/magnifying-glass.png" width="32"/>
+                <span class="text-gray-700">Attention to Detail</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Time management" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/time-management.png" width="32"/>
+                <span class="text-gray-700">Time Management</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Effective communication" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/communication.png" width="32"/>
+                <span class="text-gray-700">Effective Communication</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Teamwork" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/teamwork.png" width="32"/>
+                <span class="text-gray-700">Teamwork</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Fast learning" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/learning.png" width="32"/>
+                <span class="text-gray-700">Fast Learning</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Financial reporting" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/financial-report.png" width="32"/>
+                <span class="text-gray-700">Financial Reporting</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Data analysis" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/data-analysis.png" width="32"/>
+                <span class="text-gray-700">Data Analysis</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Database management" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/database.png" width="32"/>
+                <span class="text-gray-700">Database Management</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Python programming" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/python.png" width="32"/>
+                <span class="text-gray-700">Python Programming</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Customer handling" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/customer-support.png" width="32"/>
+                <span class="text-gray-700">Customer Handling</span>
+            </div>
+            <div class="flex items-center mb-2">
+                <img alt="Dashboard design" class="rounded-full mr-2" height="32" src="https://img.icons8.com/color/48/dashboard.png" width="32"/>
+                <span class="text-gray-700">Dashboard Design</span>
             </div>
         </div>
     </div>
     <div class="container mx-auto p-4 bg-white rounded-lg shadow-md mt-6" id="education" style="max-width: 900px;">
-        <h2 class="text-2xl font-bold mb-4 text-blue-700">
-         Education
-        </h2>
-        <div class="flex items-center mb-4">
-         <img alt="Helwan University logo" class="rounded-full mr-4" height="64" src="Home/Helwan.jpg" width="64"/>
-         <div>
-          <h3 class="text-xl font-semibold text-blue-600">
-           Helwan University | Faculty of Commerce
-          </h3>
-          <p class="text-gray-600">
-           2015 - 2019
-          </p>
-          <p class="text-gray-600">
-           Major: Statistics Department | Grade: Good
-          </p>
-         </div>
-        </div>
-       </div>
+          <h2 class="text-2xl font-bold mb-4 text-blue-700">
+           Education
+          </h2>
+          <div class="flex items-center mb-4">
+           <img alt="Helwan University logo" class="rounded-full mr-4" height="64" src="Home/Helwan.jpg" width="64"/>
+           <div>
+            <h3 class="text-xl font-semibold text-blue-600">
+             Helwan University | Faculty of Commerce
+            </h3>
+            <p class="text-gray-600">
+             2015 - 2019
+            </p>
+            <p class="text-gray-600">
+             Major: Statistics Department | Grade: Good
+            </p>
+           </div>
+          </div>
+    </div>
+
+
     <div class="container mx-auto p-4 bg-white rounded-lg shadow-md mt-6" id="courses-projects" style="max-width: 900px;">
         <h3 class="text-2xl font-bold mb-6">
             Courses &amp; Projects
